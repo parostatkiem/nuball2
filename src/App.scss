@@ -1,0 +1,75 @@
+#pubnub-logo {
+  #bg {
+    top: -1.4em;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.8;
+    width: 6em;
+    height: 4em;
+    position: absolute;
+    left: -1.15em;
+    z-index: -1;
+    filter: blur(1.3em);
+  }
+  display: block;
+  position: relative;
+  font-weight: 200;
+  text-align: center;
+  font-size: 6em;
+  font-family: "Clip";
+  color: rgba(255, 180, 180, 1);
+  text-shadow: 0 0 30px red, 0 0 25px red, 0 0 20px red, 0 0 15px red,
+    0 0 25px red;
+  margin: 0.8em auto;
+  z-index: 4;
+  mix-blend-mode: lighten;
+  user-select: none;
+  animation: flicker infinite 10s;
+  //   transition: opacity 0.5s;
+}
+
+@font-face {
+  font-family: "Neon";
+  src: url(marquee-moon.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Clip";
+  src: url("Clip.ttf") format("truetype");
+}
+
+main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    //text-shadow: none;
+    opacity: 1;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
+}
+
+#players-counter {
+  color: red;
+}

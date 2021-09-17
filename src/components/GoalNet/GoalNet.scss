@@ -1,0 +1,34 @@
+.goal-net {
+  position: absolute;
+  border: 1px solid #ff0;
+  border-radius: 0.8em 0 0 0.8em;
+  border-width: 2px 0 2px 2px;
+  box-sizing: border-box;
+  mix-blend-mode: color-dodge;
+  background-color: rgba(255, 255, 0, 0.5);
+  box-shadow: 0 0 1.3rem #ff0;
+
+  &.right {
+    background-color: rgba(0, 204, 255, 0.5);
+    box-shadow: 0 0 1.3rem #00ccff;
+    border-color: #00ccff;
+
+    span {
+      transform: scale(-1, 1);
+      color: #00ccff;
+      text-shadow: 0 0 4px #00ccff;
+    }
+  }
+
+  span {
+    font-family: "Neon";
+    text-shadow: 0 0 4px yellow;
+    display: block;
+    position: absolute;
+    left: -0.7em;
+    color: yellow;
+    mix-blend-mode: color-dodge;
+    top: 0.8em;
+    font-size: 3.6em;
+  }
+}
